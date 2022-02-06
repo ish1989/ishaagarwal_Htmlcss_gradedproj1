@@ -1,0 +1,83 @@
+/*Body CSS*/
+body
+{
+    font-family: 'Overpass', sans-serif;
+}
+
+
+.div-form
+{   position: absolute;
+    top:60px;
+    left:122px;
+    right:30px;
+    bottom:50px;
+    border:2px solid black;
+    width:1250px;
+    height:650px;
+    background-attachment: fixed;
+}
+
+.part1,form
+{
+    display: inline-block;
+    position:absolute;
+    top:0px;
+    width:636px;
+    height:650px;
+   
+}
+
+.part2 ,img
+{   position: fixed;
+    float:left;
+    left:760px;
+   
+    
+    width:610px;
+    height:650px;
+    background-size: 610px 610px;
+    background-attachment: fixed;
+   
+
+}
+
+.div-form
+{
+overflow: scroll;
+height:650px;
+}
+
+h3{
+    margin:0;
+    padding:32px;
+    left:10px;
+    font-size:30px;
+}
+
+input
+{
+    margin-left:35px;
+    display:inline;
+    border:none;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.199);
+    font-size: large;
+    margin-bottom: 30px;
+
+}
+
+.div-last
+{
+    position: absolute;
+    top:750px;
+    left:368px;
+    margin-bottom: 2px;
+}
+
+button{
+    background-color: rgb(71, 185, 147);
+    border:2px solid blue;
+    margin: 8px;
+    padding:8px;
+    font-size: larger;
+   border-radius: 3px;
+}
