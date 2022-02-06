@@ -1,0 +1,318 @@
+/*Body CSS*/
+body
+{
+    font-family: 'Overpass', sans-serif;
+}
+
+
+
+
+/*Header CSS*/
+header{
+    margin:0px;
+    padding:0px;
+    width:100%;
+    height:70px;
+    background-image:url('images/medicine.jpg');
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity:0.9;
+    border-radius: 3px;
+    
+}
+
+#header
+{
+    margin-top:6px;
+    margin-bottom:0px;
+    text-align: center;
+    font-size: 6vh;
+    text-shadow:5px 4px rgba(255, 255, 255, 0.973);
+    color: rgb(31, 82, 192);
+}
+
+
+
+
+/* Nav- Menu*/
+
+nav
+{
+    
+    background-color: rgb(31, 82, 192);
+    margin-bottom:20px;
+}
+
+nav ul 
+{
+
+    margin-top: 2px;
+    padding-left:0px;
+  
+}
+
+
+nav ul li
+{
+    display:inline-block;
+    list-style: none;
+    margin:9px;
+    padding:20px;
+    font-size: larger;
+    color:white;
+    cursor:pointer;
+  
+
+
+}
+
+
+#top
+{
+    position:sticky;
+    top:0;
+    opacity: .9;
+    z-index:1;
+    
+}
+
+
+nav ul li a
+{
+    color:white;
+    text-decoration: none;
+    
+}
+
+
+nav ul li:hover
+{    
+    background-color:#508050c0;
+    border:1px solid #508050c0;
+    border-radius: 3px; 
+   
+}
+
+
+
+
+/* sub-menu1*/
+
+
+.sub-menu1
+{
+    display: none;
+    margin:10px;
+    left:132px;
+  
+   width:166px;
+}
+
+nav ul li:hover .sub-menu1
+{
+    display: block;
+    position: absolute;
+    background-color:rgba(48, 158, 48, 0.452);
+    margin-top:21px;
+   
+    margin-left:-12px;
+    border-radius: 2px;
+    font-size: medium;
+
+}
+
+
+nav ul li:hover .sub-menu1 .ul-menu1 li 
+{
+    display:block;
+    margin-left:0;
+    margin-bottom:18px;
+    padding:3px;
+    width:159px;
+   
+   
+
+}
+.sub-menu1 .ul-menu1 :hover
+{
+
+    text-decoration: none;
+    color:white;
+    background-color: rgba(19, 167, 226, 0.788);
+
+}
+
+/* sub-menu2*/
+
+.sub-menu2
+{
+    display: none;
+    margin:10px;
+    left:316px;
+    width:145px;
+}
+
+nav ul li:hover .sub-menu2
+{
+    display: block;
+    position: absolute;
+    background-color:rgba(48, 158, 48, 0.452);
+    margin-top:21px;
+    margin-left:-12px;
+    border-radius: 2px;
+    font-size: medium;
+  
+  
+  
+}
+
+nav ul li:hover .sub-menu2 .ul-menu2 li
+{
+    display:block;
+    margin-left:0;
+    margin-bottom:18px;
+    padding:3px;
+    width:138px;
+
+}
+
+.sub-menu2 .ul-menu2  :hover
+{
+
+    text-decoration: none;
+    color:white;
+    background-color:rgba(19, 167, 226, 0.788);
+}
+
+/*Advertisement*/
+
+#advertisement
+{
+    margin:3px 1px 3px 1px;
+    border:2px solid steelblue;
+    width:1418px;
+    height:400px;
+    background-image: url('/images/Animation/ani1.jpg');
+    background-size:1418px 400px;
+    background-repeat:no-repeat;
+    animation-name:slide;
+    animation-duration: 15s;
+    animation-iteration-count:infinite ;
+    border:1px 0px 0px 0px solid steelblue;
+   
+}
+@keyframes slide
+ {
+
+    0%{
+        background-image: url('/images/Animation/ani2.jpg');
+    }
+    25%{
+        background-image: url('/images/Animation/ani3.jpg');
+    }
+    50%
+    {
+        background-image: url('/images/Animation/ani4.jpg');
+
+    }
+    75%
+    {
+        background-image: url('/images/Animation/ani5.jpg');
+    }
+    100%
+    {
+        background-image: url('/images/Animation/ani1.jpg');
+    }
+
+}
+
+
+/*Product List */
+
+
+#products
+{
+    border:1px solid black;
+}
+
+.product-display>div
+{
+    display: inline-block;
+    border:1px solid rgb(122, 122, 165);
+    background-color: rgb(177, 221, 241);
+    margin:20px;
+    padding:7px;
+    border-radius:33px;
+    box-shadow:10px 10px 5px rgb(161, 203, 238) ;
+    
+}
+
+.product-display div .image:hover
+{
+    width:290px;
+    height:200px;
+    
+}
+
+
+   .image
+{
+        
+    position:relative;
+    border-radius:1px;
+    width:280px;
+    height:180px;
+    margin:3px;
+} 
+
+
+   h2
+{
+    color:black;
+    margin-left:8px;
+    text-shadow:2px 2px white;
+    font-size:25px;
+    font-family:monospace;
+}
+
+   h3
+{
+    font-family:monospace;
+}
+
+p
+{
+    font-size: large;
+    color:darkred;
+    margin-left: 3px;
+}
+
+button
+{
+    text-align: center;
+    margin: 6px;
+    padding: 10px 100px;
+    border:1px solid black;
+    border-radius: 7px;
+    background-color:rgba(48, 158, 48, 0.452) ;
+    font-weight: bold;
+    color:black;
+    
+}
+button:active
+{
+    background-color: rgb(250,234,230);
+    border:rgb(0,255,76);
+}
+
+
+/*Footer Main-Page*/
+footer,footer-head
+{   margin:1px;
+    padding:4px;
+    background-color: rgb(3, 120, 187);
+    color:white;
+    text-align: center; 
+    font-size: larger;
+}

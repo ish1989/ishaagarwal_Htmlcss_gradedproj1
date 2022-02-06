@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Test Form</title>
+    <link rel="stylesheet" href="LabTest.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dongle&family=Overpass:wght@300;400;500&display=swap"
+    rel="stylesheet">
+    
+</head>
+
+<body>
+    <div class="div-form">
+
+        <div class="part1">
+            <form action="sample.html" id="formsubmit">
+                <h3>1.Your Contact Details</h3>
+                <input type="text" name="Name" placeholder="Full Name">
+                <input type="text" name="Id" placeholder="Patient id if exists">
+                <input type="text" placeholder="Contact Number" minlength="3000000000" maxlength="9999999999">
+                <input type="email" placeholder="Email Id">
+
+                <h3>2. Address</h3>
+                <input type="text" name="HouseNo" placeholder="House Number">
+                <input type="text" name="street" placeholder="Street">
+                <input type="text" name="Area" placeholder="Area"><br />
+                <label style="margin:28px;padding:9px;font-size:large" for="dropdown"
+                    style="margin-left:50px;">District</label>
+                <select style="margin-left:10px;" name="District" Id="dropdown">
+                    <option value="Choose">Choose</option>
+                    <option value="Bapu bazar">Bapu Bazar</option>
+                    <option value="Mansarovar">Mansarovar</option>
+                    <option value="Raja Park"> Raja Park</option>
+                    <option value="Raja Park"> Other</option>
+                </select>
+
+                <h3>3. Test Type</h3>
+                <input type="checkbox" name="test1" id="test1" value="CBC">
+                <label for="test1">CBC</label>
+                <input type="checkbox" name="test2" id="test2" value="Complete Urine">
+                <label for="test2">Complete Urine</label>
+                <input type="checkbox" name="test3" id="test3" value="Lipid Profile">
+                <label for="test3">Lipid Profile</label></br>
+                <input type="checkbox" name="test4" id="test4" value="Thryoid">
+                <label for="test4">Thyroid Stimulating Hormone(TSH)</label>
+                <input type="checkbox" name="test5" id="test5" value="Glucose">
+                <label for="test5">Glucose</label>
+
+                <h3>4. Do you want Hard Copy </h3>
+                <input type="radio" name="button">Yes
+                <input type="radio" name="button">No
+
+                <h3> 5. Select Date and Time</h3>
+                <input type="datetime-local"></br></br>
+
+
+
+
+
+
+            </form>
+        </div>
+        <div class="part2">
+            <img src="images/Lab-Test/lab-test.jpg">
+
+
+        </div>
+    </div>
+
+
+    <div class="div-last">
+        <button type="Submit" form="formsubmit"> Submit</button>
+        <button type="reset" form="formsubmit">Reset</button>
+
+    </div>
+
+</body>
+
+</html>
